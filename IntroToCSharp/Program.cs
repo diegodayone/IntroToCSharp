@@ -1,12 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MyModels;
+using System;
 
 namespace IntroToCSharp
 {
+    // Hey man, run Program.Main <= since main is static, this is feasible
     class Program
     {
         static void Main(string[] args)
         {
+            //var boat = new Vehicle();
+            //boat.NumberOfDoors = 0;
+            //boat.GoesOnRoad = false;
+            //boat.GoesOnSea = true;
+            //boat.Name = "Titanic";
+            //boat.NumberOfWheels = 0;
+
+            //var fiatPunto = new Vehicle();
+            //fiatPunto.NumberOfWheels = 4;
+            //fiatPunto.NumberOfDoors = 5;
+            //fiatPunto.Name = "Fiat Punto";
+            //fiatPunto.GoesOnSea = false;
+            //fiatPunto.GoesOnRoad = true;
+
+            var school = new School(); //new MyModels.School();
+            school.SchoolName = "Strive School";
+
+            Console.WriteLine("Now we have " + Student.StudentCount + " students");
+
+            var student1 = new Student("1231223123");
+            student1.Name = "Valerio";
+            student1.Surname = "Fusco";
+            student1.YearOfBirth = 1997;
+
+            Console.WriteLine("Now we have " + Student.StudentCount + " students");
+
+            var student2 = new Student("1231223123123");
+            student2.Name = "Michele";
+            student2.Surname = "Lunati";
+            student2.YearOfBirth = 1977;
+
+            Console.WriteLine("Now we have " + Student.StudentCount + " students");
+
+            Console.WriteLine(student1.PrintFullName(false));
+            //student1.NationalInsuranceNumber = "1231233333";
+
+
             //console.log("Hello Strive Class!");
             Console.WriteLine("Hello Strive Class!");
 
